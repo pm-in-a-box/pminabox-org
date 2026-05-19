@@ -23,6 +23,11 @@
 
 html { scroll-behavior: smooth; }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   font-family: var(--font-sans);
@@ -44,7 +49,7 @@ h1, h2, h3 {
   font-family: var(--font-serif);
   font-weight: 500;
   font-variation-settings: "opsz" 64;
-  letter-spacing: -0.01em;
+  letter-spacing: 0;
   line-height: 1.1;
   margin: 0 0 0.5em;
 }
@@ -273,6 +278,14 @@ h1 em, h2 em, h3 em {
 /* ---------- skills ---------- */
 .section--skills { background: var(--surface-2); }
 
+.marketplace-intro {
+  max-width: 74ch;
+  color: var(--muted);
+  font-size: 1.05rem;
+  margin: -0.75rem 0 2.5rem;
+}
+.marketplace-intro p:last-child { margin-bottom: 0; }
+
 .card {
   background: #fff;
   border: 1px solid var(--line);
@@ -383,6 +396,12 @@ h1 em, h2 em, h3 em {
 .cta h2 {
   font-size: clamp(2rem, 4.5vw, 3.25rem);
   max-width: 22ch;
+  margin: 0 auto 1rem;
+}
+.cta__sub {
+  color: var(--muted);
+  font-size: 1.05rem;
+  max-width: 42rem;
   margin: 0 auto 2rem;
 }
 .cta__ctas {
@@ -451,6 +470,21 @@ h1 em, h2 em, h3 em {
 @media (max-width: 620px) {
   body { font-size: 16px; }
   .grid--2, .grid--3, .grid--4 { grid-template-columns: 1fr; }
+  .wrap,
+  .hero__title,
+  .hero__sub,
+  .hero__meta,
+  .section__title,
+  .manifesto,
+  .marketplace-intro,
+  .prose,
+  .card,
+  .lane,
+  .principle {
+    max-width: 100%;
+    min-width: 0;
+    overflow-wrap: break-word;
+  }
   .hero__title { font-size: clamp(2.25rem, 9vw, 3rem); }
   .section__title { font-size: clamp(1.75rem, 7vw, 2.25rem); }
   .nav__cta span { display: none; }
