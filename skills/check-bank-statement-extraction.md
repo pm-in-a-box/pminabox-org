@@ -15,7 +15,7 @@ Turns scanned bank statements and check images — including handwritten checks 
 - Builds a check register from a batch of scanned checks, not just the statement summary
 - Works across banks without per-bank configuration — field mapping is inferred, not hard-coded
 - Matches extracted transactions against the operator's chart of accounts so lines land in the right GL account
-- Exports a reconciled batch to accounting software (QuickBooks IIF) for import
+- Exports a reconciled batch as IIF, QBO, CSV, or XLS — ready to import into QuickBooks or open in a spreadsheet
 
 ## Data handling
 
