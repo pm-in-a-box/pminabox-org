@@ -18,7 +18,11 @@
     const cards = Array.from(grid.querySelectorAll(".listing-card"));
     if (!cards.length) return;
 
-    const existingText = toolbar.textContent.trim();
+    const existingText = Array.from(toolbar.children)
+      .map((child) => child.textContent.trim())
+      .filter(Boolean)
+      .join(" · ")
+      .replace(/^Sort:\s*/i, "Default ranking: ");
     const categories = new Set();
     const statuses = new Set();
 
@@ -43,30 +47,30 @@
     toolbar.classList.add("catalog-toolbar--interactive");
     toolbar.innerHTML = `
       <div class="catalog-toolbar__summary">
-        <strong>Marketplace controls</strong>
+        <strong>Search catalog</strong>
         <span>${escapeHtml(existingText)}</span>
       </div>
       <form class="catalog-controls" role="search" aria-label="Search and filter marketplace listings">
         <label class="catalog-search">
-          <span class="sr-only">Search listings</span>
+          <span>Search</span>
           <input type="search" placeholder="Search listings" autocomplete="off" />
         </label>
         <label>
-          <span class="sr-only">Category</span>
+          <span>Category</span>
           <select name="category">
             <option value="">All categories</option>
             ${Array.from(categories).sort().map((value) => `<option value="${escapeHtml(value)}">${escapeHtml(value)}</option>`).join("")}
           </select>
         </label>
         <label>
-          <span class="sr-only">Status</span>
+          <span>Status</span>
           <select name="status">
             <option value="">All statuses</option>
             ${Array.from(statuses).sort().map((value) => `<option value="${escapeHtml(value)}">${escapeHtml(value)}</option>`).join("")}
           </select>
         </label>
         <label>
-          <span class="sr-only">Sort listings</span>
+          <span>Sort</span>
           <select name="sort">
             <option value="installs">Most installed</option>
             <option value="usage">Most used</option>
