@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Skills — PM in a Box Marketplace</title>
+  <meta name="description" content="PM in a Box skills are Markdown-based capabilities agents can use, with tools and connectors declared as dependencies." />
+  <link rel="icon" type="image/svg+xml" href="../../favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../styles.css" />
+</head>
+<body>
+  <header class="nav" id="nav">
+    <div class="wrap nav__inner">
+      <a href="../../" class="brand" aria-label="PM in a Box home"><img src="../../logo.svg" alt="" width="32" height="39" class="brand__logo" /><span class="brand__name">PM in a Box</span></a>
+      <nav class="nav__links" aria-label="Primary"><a href="../">Marketplace</a><a href="../agents/">Agents</a><a href="../tools/">Tools</a><a href="../connectors/">Connectors</a></nav>
+      <a class="btn btn--ghost nav__cta" href="https://github.com/pm-in-a-box/pminabox-org" target="_blank" rel="noopener">Contribute</a>
+    </div>
+  </header>
+  <main>
+    <section class="page-hero wrap">
+      <p class="eyebrow">Skills</p>
+      <h1 class="hero__title">Focused capabilities agents can use.</h1>
+      <p class="hero__sub">Skills are usually Markdown files: instructions, workflows, and domain knowledge. A skill can require tools and connectors, and agents can combine several skills into a named assistant.</p>
+    </section>
+    <section class="section section--skills">
+      <div class="wrap">
+        <div class="grid grid--3 listing-grid">
+          <article class="listing-card"><div class="listing-card__top"><span class="pill">Leasing</span><span class="listing-card__status">Skill</span></div><h3>Screening and Background Check</h3><p>Runs an approved applicant screening workflow and summarizes pass, fail, and review-needed signals.</p><dl class="dependency-list"><div><dt>Tools</dt><dd>Document reader, approval workflow</dd></div><div><dt>Connectors</dt><dd>Screening provider, PMS</dd></div></dl></article>
+          <article class="listing-card"><div class="listing-card__top"><span class="pill">Leasing</span><span class="listing-card__status">Skill</span></div><h3>Income Verification</h3><p>Reviews income documents and structured payroll data against company approval criteria.</p><dl class="dependency-list"><div><dt>Tools</dt><dd>PDF extractor, spreadsheet manipulator</dd></div><div><dt>Connectors</dt><dd>PMS, income verification provider</dd></div></dl></article>
+          <article class="listing-card"><div class="listing-card__top"><span class="pill">Compliance</span><span class="listing-card__status">Skill</span></div><h3>Fair Housing Knowledge</h3><p>Guides leasing and operations responses using company policy and fair housing guardrails.</p><dl class="dependency-list"><div><dt>Tools</dt><dd>Knowledge retrieval</dd></div><div><dt>Connectors</dt><dd>Policy documents, training library</dd></div></dl></article>
+          <article class="listing-card"><div class="listing-card__top"><span class="pill">Revenue</span><span class="listing-card__status">Skill</span></div><h3>Management Agreement Review</h3><p>Extracts fee terms, renewal rules, notice requirements, and owner-specific exceptions from agreements.</p><dl class="dependency-list"><div><dt>Tools</dt><dd>PDF extractor, clause highlighter</dd></div><div><dt>Connectors</dt><dd>Document storage, PMS owners</dd></div></dl></article>
+          <article class="listing-card"><div class="listing-card__top"><span class="pill">Accounting</span><span class="listing-card__status">Skill</span></div><h3>Ledger Exception Analysis</h3><p>Finds unusual balances, missing charges, stale credits, and other review-worthy ledger conditions.</p><dl class="dependency-list"><div><dt>Tools</dt><dd>Spreadsheet manipulator, report generator</dd></div><div><dt>Connectors</dt><dd>PMS, accounting system</dd></div></dl></article>
+          <article class="listing-card"><div class="listing-card__top"><span class="pill">Comms</span><span class="listing-card__status">Skill</span></div><h3>Owner Update Drafting</h3><p>Turns tasks, ledgers, maintenance updates, and approvals into concise owner-ready messages.</p><dl class="dependency-list"><div><dt>Tools</dt><dd>Messaging, approval workflow</dd></div><div><dt>Connectors</dt><dd>Email, PMS, maintenance system</dd></div></dl></article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><div class="wrap footer__inner"><div class="footer__links"><a href="../">Marketplace</a><a href="../agents/">Agents</a><a href="../tools/">Tools</a><a href="../connectors/">Connectors</a></div><p class="footer__meta">AGPL-3.0 licensed. &copy; <span id="year">2026</span> PM in a Box contributors.</p></div></footer>
+  <script src="../../script.js" defer></script>
+</body>
+</html>

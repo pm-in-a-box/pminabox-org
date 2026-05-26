@@ -229,6 +229,11 @@ h1 em, h2 em, h3 em {
   color: var(--muted);
 }
 
+.page-hero {
+  padding-top: clamp(3.25rem, 7vw, 5.5rem);
+  padding-bottom: clamp(3.25rem, 7vw, 5.5rem);
+}
+
 /* ---------- problem ---------- */
 .section--problem {
   background: var(--navy);
@@ -286,6 +291,41 @@ h1 em, h2 em, h3 em {
 }
 .marketplace-intro p:last-child { margin-bottom: 0; }
 
+.taxonomy {
+  margin: 0 0 2.5rem;
+}
+.taxonomy--large {
+  align-items: stretch;
+  margin-bottom: 0;
+}
+.taxonomy__item {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.72);
+  padding: 1.35rem;
+  min-width: 0;
+}
+.taxonomy__item span {
+  display: block;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 0.35rem;
+}
+.taxonomy__item p {
+  color: var(--muted);
+  font-size: 0.93rem;
+  margin: 0;
+}
+.taxonomy__item a {
+  display: inline-block;
+  margin-top: 1rem;
+  color: var(--terracotta);
+  font-weight: 600;
+  font-size: 0.92rem;
+  text-decoration: none;
+}
+.taxonomy__item a:hover { text-decoration: underline; }
+
 .card {
   background: #fff;
   border: 1px solid var(--line);
@@ -327,6 +367,145 @@ h1 em, h2 em, h3 em {
 }
 .skills__footnote a { color: var(--terracotta); text-decoration: none; font-weight: 600; }
 .skills__footnote a:hover { text-decoration: underline; }
+
+/* ---------- marketplace pages ---------- */
+.listing-grid {
+  align-items: stretch;
+}
+.listing-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  min-width: 0;
+}
+.listing-card__top {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  align-items: center;
+}
+.pill {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  max-width: 100%;
+  min-height: 1.7rem;
+  border-radius: 999px;
+  padding: 0.25rem 0.7rem;
+  background: rgba(200, 90, 58, 0.1);
+  color: var(--terracotta-600);
+  font-size: 0.76rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.listing-card__status {
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.listing-card h3 {
+  font-family: var(--font-sans);
+  font-size: 1.18rem;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0;
+}
+.listing-card p {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin: 0;
+}
+.dependency-list {
+  display: grid;
+  gap: 0.6rem;
+  margin: 0;
+}
+.dependency-list div {
+  border-top: 1px solid var(--line);
+  padding-top: 0.6rem;
+}
+.dependency-list dt {
+  color: var(--ink);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.dependency-list dd {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin: 0.15rem 0 0;
+}
+.dependency-list--stacked {
+  margin-top: 1.25rem;
+}
+.detail-layout {
+  display: grid;
+  grid-template-columns: minmax(16rem, 0.78fr) minmax(0, 2fr);
+  gap: clamp(1.5rem, 3vw, 2.5rem);
+  align-items: start;
+}
+.detail-panel {
+  background: var(--navy);
+  color: var(--surface);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  position: sticky;
+  top: 92px;
+}
+.detail-panel h2 {
+  color: #fff;
+  font-family: var(--font-sans);
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 1rem 0 0.5rem;
+}
+.detail-panel p,
+.detail-panel dd {
+  color: var(--muted-on-dark);
+}
+.detail-panel dt {
+  color: #fff;
+}
+.detail-panel .dependency-list div {
+  border-top-color: var(--line-on-dark);
+}
+.detail-main {
+  min-width: 0;
+}
+.clean-list {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin: 0;
+  padding-left: 1.15rem;
+}
+.clean-list li + li { margin-top: 0.35rem; }
+.workflow {
+  margin-top: clamp(2rem, 5vw, 3.5rem);
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: clamp(1.5rem, 3vw, 2rem);
+  box-shadow: var(--shadow);
+}
+.workflow h2 {
+  font-family: var(--font-sans);
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.workflow ol {
+  color: var(--muted);
+  margin: 0;
+  padding-left: 1.2rem;
+}
+.workflow li + li { margin-top: 0.55rem; }
 
 /* ---------- principles ---------- */
 .section--principles {
@@ -466,6 +645,8 @@ h1 em, h2 em, h3 em {
 @media (max-width: 900px) {
   .grid--2, .grid--3, .grid--4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .nav__links { display: none; }
+  .detail-layout { grid-template-columns: 1fr; }
+  .detail-panel { position: static; }
 }
 @media (max-width: 620px) {
   body { font-size: 16px; }
@@ -479,6 +660,10 @@ h1 em, h2 em, h3 em {
   .marketplace-intro,
   .prose,
   .card,
+  .taxonomy__item,
+  .listing-card,
+  .detail-panel,
+  .workflow,
   .lane,
   .principle {
     max-width: 100%;

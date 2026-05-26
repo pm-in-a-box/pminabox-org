@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PM in a Box Marketplace — agents, skills, tools, and connectors</title>
+  <meta name="description" content="Browse and contribute PM in a Box agents, skills, tools, and connectors for property management operations." />
+  <meta name="theme-color" content="#0f1e3d" />
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <header class="nav" id="nav">
+    <div class="wrap nav__inner">
+      <a href="../" class="brand" aria-label="PM in a Box home">
+        <img src="../logo.svg" alt="" width="32" height="39" class="brand__logo" />
+        <span class="brand__name">PM in a Box</span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="../#problem">The Problem</a>
+        <a href="../#building">What We're Building</a>
+        <a href="./">Marketplace</a>
+        <a href="../#contribute">Contribute</a>
+      </nav>
+      <a class="btn btn--ghost nav__cta" href="https://github.com/pm-in-a-box/pminabox-org" target="_blank" rel="noopener">Star on GitHub</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero wrap">
+      <p class="eyebrow">Marketplace</p>
+      <h1 class="hero__title">Install the parts your PM business needs.</h1>
+      <p class="hero__sub">
+        PM in a Box marketplace is the operator-facing catalog for community and vendor-contributed
+        agents, skills, tools, and connectors. Browse what is available, see what each listing depends
+        on, and add the right capabilities to your box.
+      </p>
+      <div class="hero__ctas">
+        <a class="btn btn--primary" href="agents/">Browse agents</a>
+        <a class="btn btn--secondary" href="connectors/">Browse connectors</a>
+        <a class="btn btn--secondary" href="https://github.com/pm-in-a-box/pminabox-org" target="_blank" rel="noopener">Contribute a listing</a>
+      </div>
+    </section>
+
+    <section class="section section--skills">
+      <div class="wrap">
+        <p class="eyebrow">How the catalog works</p>
+        <h2 class="section__title">Four building blocks, one install flow.</h2>
+        <div class="grid grid--4 taxonomy taxonomy--large">
+          <article class="taxonomy__item">
+            <span>Agents</span>
+            <p>Named teammates operators can @mention in chat, like Lisa the leasing agent. Agents usually bundle multiple skills and declare every tool or connector they need.</p>
+            <a href="agents/">View agents &rarr;</a>
+          </article>
+          <article class="taxonomy__item">
+            <span>Skills</span>
+            <p>Markdown-based capabilities that describe workflows, knowledge, and instructions. Skills can require tools and connectors, but they are not the main @mention surface for most operators.</p>
+            <a href="skills/">View skills &rarr;</a>
+          </article>
+          <article class="taxonomy__item">
+            <span>Tools</span>
+            <p>General-purpose actions that agents and skills can use: PDF extraction, spreadsheet manipulation, browser automation, document redaction, and approval workflows.</p>
+            <a href="tools/">View tools &rarr;</a>
+          </article>
+          <article class="taxonomy__item">
+            <span>Connectors</span>
+            <p>External data and system access, usually MCPs: Rentvine, AppFolio, Rent Manager, Property Meld, email, calendars, accounting, phones, and more.</p>
+            <a href="connectors/">View connectors &rarr;</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <p class="eyebrow">Featured examples</p>
+        <h2 class="section__title">A marketplace built around dependencies.</h2>
+        <div class="grid grid--3 listing-grid">
+          <article class="listing-card">
+            <div class="listing-card__top">
+              <span class="pill">Agent</span>
+              <span class="listing-card__status">Concept</span>
+            </div>
+            <h3>Fee Revenue Maximizer</h3>
+            <p>Finds missed or underused management fees, compares lease and agreement rules, and drafts owner-safe recommendations.</p>
+            <dl class="dependency-list">
+              <div><dt>Skills</dt><dd>Agreement review, ledger analysis, owner comms</dd></div>
+              <div><dt>Tools</dt><dd>PDF extractor, spreadsheet manipulator</dd></div>
+              <div><dt>Connectors</dt><dd>PMS, accounting, Google Workspace</dd></div>
+            </dl>
+            <a class="btn btn--link" href="agents/fee-revenue-maximizer/">View detail &rarr;</a>
+          </article>
+
+          <article class="listing-card">
+            <div class="listing-card__top">
+              <span class="pill">Official vendor agent</span>
+              <span class="listing-card__status">Example</span>
+            </div>
+            <h3>Property Meld Maintenance Coordinator</h3>
+            <p>An expert agent built around Property Meld workflows, with optional PMS, email, and vendor communication dependencies.</p>
+            <dl class="dependency-list">
+              <div><dt>Skills</dt><dd>Triage, resident updates, vendor scheduling</dd></div>
+              <div><dt>Tools</dt><dd>Messaging, document reader</dd></div>
+              <div><dt>Connectors</dt><dd>Property Meld MCP, PMS, email</dd></div>
+            </dl>
+            <a class="btn btn--link" href="agents/">See agent examples &rarr;</a>
+          </article>
+
+          <article class="listing-card">
+            <div class="listing-card__top">
+              <span class="pill">Connector</span>
+              <span class="listing-card__status">Example</span>
+            </div>
+            <h3>Rentvine PMS Connector</h3>
+            <p>A data connector that makes leases, residents, properties, work orders, and financial records available to approved agents.</p>
+            <dl class="dependency-list">
+              <div><dt>Used by</dt><dd>Leasing, accounting, maintenance, owner reporting agents</dd></div>
+              <div><dt>Type</dt><dd>MCP connector</dd></div>
+              <div><dt>Access</dt><dd>Scoped OAuth or API credentials</dd></div>
+            </dl>
+            <a class="btn btn--link" href="connectors/">See connector examples &rarr;</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--principles">
+      <div class="wrap">
+        <p class="eyebrow eyebrow--on-dark">Community contributions</p>
+        <h2 class="section__title">Contribute like a vendor, operator, or power user.</h2>
+        <div class="grid grid--3 principles">
+          <div class="principle">
+            <span class="principle__num">01</span>
+            <h3>Vendors can publish official integrations</h3>
+            <p>Property Meld, Rent Engine, Rentvine, AppFolio, and others can contribute official connectors and agents tuned to their products.</p>
+          </div>
+          <div class="principle">
+            <span class="principle__num">02</span>
+            <h3>Operators can publish configurations</h3>
+            <p>A great leasing or fee-maximizing setup can spread because it works, like a playlist the industry keeps installing.</p>
+          </div>
+          <div class="principle">
+            <span class="principle__num">03</span>
+            <h3>Developers can publish reusable parts</h3>
+            <p>Tools, connectors, and skills can be maintained independently and reused by many different agents.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <div class="footer__brand">
+        <img src="../logo.svg" alt="" width="28" height="34" class="brand__logo brand__logo--on-dark" />
+        <strong>PM in a Box</strong>
+        <span class="footer__tag">By the industry, for the industry.</span>
+      </div>
+      <div class="footer__links">
+        <a href="agents/">Agents</a>
+        <a href="skills/">Skills</a>
+        <a href="tools/">Tools</a>
+        <a href="connectors/">Connectors</a>
+      </div>
+      <p class="footer__meta">AGPL-3.0 licensed. &copy; <span id="year">2026</span> PM in a Box contributors.</p>
+    </div>
+  </footer>
+
+  <script src="../script.js" defer></script>
+</body>
+</html>
