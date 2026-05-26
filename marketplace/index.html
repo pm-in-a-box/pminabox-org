@@ -38,8 +38,10 @@
         agents, skills, tools, and connectors. Browse what is available, see what each listing depends
         on, and add the right capabilities to your box.
       </p>
+      <p class="hero__note">Default ranking: installs first, then active usage and operator retention.</p>
       <div class="hero__ctas">
         <a class="btn btn--primary" href="agents/">Browse agents</a>
+        <a class="btn btn--secondary" href="mailto:taylor@apmhelp.com?subject=Install%20PM%20in%20a%20Box%20marketplace%20listing">Add to my box</a>
         <a class="btn btn--secondary" href="connectors/">Browse connectors</a>
         <a class="btn btn--secondary" href="https://github.com/pm-in-a-box/pminabox-org" target="_blank" rel="noopener">Contribute a listing</a>
       </div>
@@ -78,6 +80,10 @@
       <div class="wrap">
         <p class="eyebrow">Featured examples</p>
         <h2 class="section__title">A marketplace built around dependencies.</h2>
+        <div class="catalog-toolbar">
+          <span><strong>Sort:</strong> installs and real usage by default</span>
+          <span>Example cards will show live install counts once marketplace telemetry exists.</span>
+        </div>
         <div class="grid grid--3 listing-grid">
           <article class="listing-card">
             <div class="listing-card__top">
@@ -91,7 +97,10 @@
               <div><dt>Tools</dt><dd>PDF extractor, spreadsheet manipulator</dd></div>
               <div><dt>Connectors</dt><dd>PMS, accounting, Google Workspace</dd></div>
             </dl>
-            <a class="btn btn--link" href="agents/fee-revenue-maximizer/">View detail &rarr;</a>
+            <div class="listing-card__actions">
+              <a class="btn btn--primary btn--small" href="mailto:taylor@apmhelp.com?subject=Add%20Fee%20Revenue%20Maximizer%20to%20my%20box">Add to my box</a>
+              <a class="btn btn--link" href="agents/fee-revenue-maximizer/">View detail &rarr;</a>
+            </div>
           </article>
 
           <article class="listing-card">
@@ -99,14 +108,21 @@
               <span class="pill">Official vendor agent</span>
               <span class="listing-card__status">Example</span>
             </div>
-            <h3>Property Meld Maintenance Coordinator</h3>
+            <div class="vendor-lockup">
+              <div class="vendor-logo" aria-label="Property Meld logo placeholder">PM</div>
+              <h3>Property Meld Maintenance Coordinator</h3>
+            </div>
             <p>An expert agent built around Property Meld workflows, with optional PMS, email, and vendor communication dependencies.</p>
             <dl class="dependency-list">
               <div><dt>Skills</dt><dd>Triage, resident updates, vendor scheduling</dd></div>
               <div><dt>Tools</dt><dd>Messaging, document reader</dd></div>
               <div><dt>Connectors</dt><dd>Property Meld MCP, PMS, email</dd></div>
             </dl>
-            <a class="btn btn--link" href="agents/">See agent examples &rarr;</a>
+            <div class="listing-card__actions">
+              <a class="btn btn--primary btn--small" href="mailto:taylor@apmhelp.com?subject=Add%20Property%20Meld%20Maintenance%20Coordinator%20to%20my%20box">Add to my box</a>
+              <a class="btn btn--link" href="agents/">See agent examples &rarr;</a>
+              <a class="vendor-link" href="https://propertymeld.com/" target="_blank" rel="noopener">Vendor details &rarr;</a>
+            </div>
           </article>
 
           <article class="listing-card">
@@ -121,8 +137,26 @@
               <div><dt>Type</dt><dd>MCP connector</dd></div>
               <div><dt>Access</dt><dd>Scoped OAuth or API credentials</dd></div>
             </dl>
-            <a class="btn btn--link" href="connectors/">See connector examples &rarr;</a>
+            <div class="listing-card__actions">
+              <a class="btn btn--primary btn--small" href="mailto:taylor@apmhelp.com?subject=Add%20Rentvine%20PMS%20Connector%20to%20my%20box">Add to my box</a>
+              <a class="btn btn--link" href="connectors/">See connector examples &rarr;</a>
+            </div>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="marketplace-cta">
+          <div>
+            <h2>Install what works, or contribute what is missing.</h2>
+            <p>Box users can request install access now. Vendors, operators, and community builders can contribute their own listings for review.</p>
+          </div>
+          <div class="marketplace-cta__actions">
+            <a class="btn btn--primary" href="mailto:taylor@apmhelp.com?subject=Install%20marketplace%20listing%20in%20my%20box">Add to my box</a>
+            <a class="btn btn--secondary" href="https://github.com/pm-in-a-box/pminabox-org" target="_blank" rel="noopener">Contribute a listing</a>
+          </div>
         </div>
       </div>
     </section>
