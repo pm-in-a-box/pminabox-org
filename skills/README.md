@@ -6,6 +6,7 @@ Skills are pluggable capabilities that extend PM in a Box. Each skill teaches th
 
 | Skill | Partner | Status |
 |-------|---------|--------|
+| [Check & bank statement extraction](./check-bank-statement-extraction.md) | Conto | Alpha |
 | SEO/GEO optimized websites | — | Planned |
 | Data backup & agentic retrieval | — | Planned |
 | Real-time bookkeeping | — | Planned |
