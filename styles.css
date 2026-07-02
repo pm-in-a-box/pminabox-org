@@ -879,6 +879,26 @@ h1 em, h2 em, h3 em {
   .nav__cta { padding: 0.5rem 0.65rem; }
 }
 
+/* ---------- legal ---------- */
+.legal {
+  max-width: 72ch;
+  color: var(--muted);
+}
+.legal h2 {
+  font-size: 1.5rem;
+  color: var(--ink);
+  margin-top: 2.5rem;
+}
+.legal h2:first-child { margin-top: 0; }
+.legal ul { margin: 0 0 1em; padding-left: 1.25rem; }
+.legal li { margin-bottom: 0.4em; }
+.legal strong { color: var(--ink); font-weight: 600; }
+.legal a { color: var(--terracotta-600); }
+.legal__updated {
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after {
