@@ -13,6 +13,6 @@ body:
     id: suggested-fix
     attributes:
       label: Suggested replacement
-      description: Optional — paste the corrected text if you have it.
+      description: Optional. Paste the corrected text if you have it.
     validations:
       required: false

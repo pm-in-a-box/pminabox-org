@@ -1,0 +1,8 @@
+{
+  "name": "pm-in-a-box-site",
+  "private": true,
+  "scripts": {
+    "check": "node scripts/check-site.mjs",
+    "test": "node scripts/check-site.mjs"
+  }
+}
