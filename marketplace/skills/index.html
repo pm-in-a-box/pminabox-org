@@ -1,48 +1,124 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-US">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Skills — PM in a Box Marketplace</title>
-  <meta name="description" content="PM in a Box skills are Markdown-based capabilities agents can use, with tools and connectors declared as dependencies." />
-  <link rel="icon" type="image/svg+xml" href="../../favicon.svg" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../../styles.css?v=20260526-ux" />
+  <title>Property Management AI Skills | PM in a Box</title>
+  <meta name="description" content="PM in a Box skills give AI agents focused property management instructions for accounting, leasing, maintenance, inbox triage, and owner reporting." />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+  <meta name="theme-color" content="#17251f" />
+  <link rel="canonical" href="https://pm-in-a-box.org/marketplace/skills/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="PM in a Box" />
+  <meta property="og:url" content="https://pm-in-a-box.org/marketplace/skills/" />
+  <meta property="og:title" content="Property Management AI Skills | PM in a Box" />
+  <meta property="og:description" content="Focused instructions for property management agents, with every skill visible and reviewable." />
+  <meta property="og:image" content="https://pm-in-a-box.org/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Property Management AI Skills | PM in a Box" />
+  <meta name="twitter:description" content="Focused, reviewable property management instructions for AI agents." />
+  <meta name="twitter:image" content="https://pm-in-a-box.org/og-image.png" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="apple-touch-icon" href="/logo.png" />
+  <link rel="stylesheet" href="/styles.css?v=20260811" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://pm-in-a-box.org/"},
+      {"@type": "ListItem", "position": 2, "name": "Marketplace", "item": "https://pm-in-a-box.org/marketplace/"},
+      {"@type": "ListItem", "position": 3, "name": "Skills", "item": "https://pm-in-a-box.org/marketplace/skills/"}
+    ]
+  }
+  </script>
 </head>
 <body>
-  <header class="nav" id="nav">
-    <div class="wrap nav__inner">
-      <a href="../../" class="brand" aria-label="PM in a Box home"><img src="../../logo.svg" alt="" width="32" height="39" class="brand__logo" /><span class="brand__name">PM in a Box</span></a>
-      <nav class="nav__links" aria-label="Primary"><a href="../">Marketplace</a><a href="../agents/">Agents</a><a href="../tools/">Tools</a><a href="../connectors/">Connectors</a></nav>
-      <a class="btn btn--ghost nav__cta" href="https://github.com/pm-in-a-box/pminabox-org" target="_blank" rel="noopener">Contribute</a>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="nav">
+    <div class="wrap site-header__inner">
+      <a href="/" class="brand" aria-label="PM in a Box home"><img src="/logo.svg" alt="" width="30" height="36" /><span>PM in a Box</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav"><span class="sr-only">Open navigation</span><span aria-hidden="true"></span><span aria-hidden="true"></span></button>
+      <nav class="site-nav" id="primary-nav" aria-label="Primary"><a href="/#inside">Inside the box</a><a href="/features/">Features</a><a href="/marketplace/" aria-current="page">Marketplace</a><a href="/#connectors">Connectors</a></nav>
+      <a class="button button--small site-header__cta" href="mailto:taylor@apmhelp.com?subject=PM%20in%20a%20Box%20hosted%20beta%20access">Request hosted beta</a>
     </div>
   </header>
-  <main>
-    <section class="page-hero wrap">
-      <p class="eyebrow">Skills</p>
-      <h1 class="hero__title">Focused capabilities agents can use.</h1>
-      <p class="hero__sub">Skills are usually Markdown files: instructions, workflows, and domain knowledge. A skill can require tools and connectors, and agents can combine several skills into a named assistant.</p>
-      <p class="hero__note">Default ranking: installs first, then active usage and operator retention.</p>
-      <div class="hero__ctas"><a class="btn btn--primary" href="mailto:taylor@apmhelp.com?subject=Add%20a%20skill%20to%20my%20box">Add a skill to my box</a><a class="btn btn--secondary" href="https://github.com/pm-in-a-box/pminabox-org" target="_blank" rel="noopener">Contribute a skill</a></div>
+
+  <main id="main">
+    <section class="page-intro wrap">
+      <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/marketplace/">Marketplace</a><span aria-hidden="true">/</span><span>Skills</span></nav>
+      <p class="kicker">Agent skills</p>
+      <h1>Teach the workflow without hiding the instructions.</h1>
+      <p>
+        A skill is a focused set of Markdown instructions and approved
+        supporting resources. Attach it to an agent, review the exact text, and
+        keep the company's way of working separate from the model itself.
+      </p>
     </section>
-    <section class="section section--skills">
+
+    <section class="section section--tint">
       <div class="wrap">
-        <div class="catalog-toolbar"><span><strong>Sort:</strong> installs and real usage by default</span><span>Skills declare tool and connector dependencies before install.</span></div>
-        <div class="grid grid--3 listing-grid">
-          <article class="listing-card"><div class="listing-card__top"><span class="pill">Leasing</span><span class="listing-card__status">Skill</span></div><h3>Screening and Background Check</h3><p>Runs an approved applicant screening workflow and summarizes pass, fail, and review-needed signals.</p><dl class="dependency-list"><div><dt>Tools</dt><dd>Document reader, approval workflow</dd></div><div><dt>Connectors</dt><dd>Screening provider, PMS</dd></div></dl></article>
-          <article class="listing-card"><div class="listing-card__top"><span class="pill">Leasing</span><span class="listing-card__status">Skill</span></div><h3>Income Verification</h3><p>Reviews income documents and structured payroll data against company approval criteria.</p><dl class="dependency-list"><div><dt>Tools</dt><dd>PDF extractor, spreadsheet manipulator</dd></div><div><dt>Connectors</dt><dd>PMS, income verification provider</dd></div></dl></article>
-          <article class="listing-card"><div class="listing-card__top"><span class="pill">Compliance</span><span class="listing-card__status">Skill</span></div><h3>Fair Housing Knowledge</h3><p>Guides leasing and operations responses using company policy and fair housing guardrails.</p><dl class="dependency-list"><div><dt>Tools</dt><dd>Knowledge retrieval</dd></div><div><dt>Connectors</dt><dd>Policy documents, training library</dd></div></dl></article>
-          <article class="listing-card"><div class="listing-card__top"><span class="pill">Revenue</span><span class="listing-card__status">Skill</span></div><h3>Management Agreement Review</h3><p>Extracts fee terms, renewal rules, notice requirements, and owner-specific exceptions from agreements.</p><dl class="dependency-list"><div><dt>Tools</dt><dd>PDF extractor, clause highlighter</dd></div><div><dt>Connectors</dt><dd>Document storage, PMS owners</dd></div></dl></article>
-          <article class="listing-card"><div class="listing-card__top"><span class="pill">Accounting</span><span class="listing-card__status">Skill</span></div><h3>Ledger Exception Analysis</h3><p>Finds unusual balances, missing charges, stale credits, and other review-worthy ledger conditions.</p><dl class="dependency-list"><div><dt>Tools</dt><dd>Spreadsheet manipulator, report generator</dd></div><div><dt>Connectors</dt><dd>PMS, accounting system</dd></div></dl></article>
-          <article class="listing-card"><div class="listing-card__top"><span class="pill">Comms</span><span class="listing-card__status">Skill</span></div><h3>Owner Update Drafting</h3><p>Turns tasks, ledgers, maintenance updates, and approvals into concise owner-ready messages.</p><dl class="dependency-list"><div><dt>Tools</dt><dd>Messaging, approval workflow</dd></div><div><dt>Connectors</dt><dd>Email, PMS, maintenance system</dd></div></dl></article>
+        <div class="section-heading">
+          <p class="kicker">Property management examples</p>
+          <h2>Skills represented in the Box catalog.</h2>
+          <p>These examples come from the product source. They can be edited, replaced, or combined for each company.</p>
+        </div>
+        <div class="skill-directory">
+          <article><span>Accounting</span><h3>Bank Reconciliation</h3><p>Match bank transactions to PMS records and surface mismatches for review.</p></article>
+          <article><span>Accounting</span><h3>Three-Way Reconciliation</h3><p>Compare bank, book, and liability balances for trust-account review.</p></article>
+          <article><span>Compliance</span><h3>Trust Compliance Check</h3><p>Use PMS records and company context to flag conditions that need a human compliance decision.</p></article>
+          <article><span>Owner relations</span><h3>Owner Statement Drafting</h3><p>Prepare owner-facing statements with line items the team can explain and verify.</p></article>
+          <article><span>Leasing</span><h3>Lease and Notice Drafting</h3><p>Draft leases, renewals, and notices from company templates and lease history.</p></article>
+          <article><span>Leasing</span><h3>Lease Summary</h3><p>Turn a lease into a concise review for renewals, questions, and follow-up work.</p></article>
+          <article><span>Operations</span><h3>Inbox Triage</h3><p>Review unread messages and group them into useful action buckets.</p></article>
+          <article><span>Maintenance</span><h3>Work-Order Triage</h3><p>Classify incoming requests by urgency and route the issue to the right next step.</p></article>
+          <article><span>Maintenance</span><h3>Vendor Dispatch</h3><p>Prepare vendor work with the request, photos, property details, and access notes together.</p></article>
         </div>
       </div>
     </section>
-    <section class="section"><div class="wrap"><div class="marketplace-cta"><div><h2>Install a focused capability, or contribute your own.</h2><p>Skills can start as simple Markdown workflows and grow into reusable building blocks for many agents.</p></div><div class="marketplace-cta__actions"><a class="btn btn--primary" href="mailto:taylor@apmhelp.com?subject=Add%20a%20skill%20to%20my%20box">Add to my box</a><a class="btn btn--secondary" href="https://github.com/pm-in-a-box/pminabox-org" target="_blank" rel="noopener">Contribute a skill</a></div></div></div></section>
+
+    <section class="section wrap">
+      <div class="section-heading section-heading--split">
+        <div><p class="kicker">How skills load</p><h2>Give the agent less context up front.</h2></div>
+        <p>An agent first sees the name and description of each attached skill. It loads the full instructions only when the work calls for them.</p>
+      </div>
+      <ol class="process-list process-list--compact">
+        <li><span>1</span><div><h3>Attach</h3><p>Choose the agent that owns the capability. Skills do not float outside an agent.</p></div></li>
+        <li><span>2</span><div><h3>Discover</h3><p>The agent receives a compact list of available skill names and descriptions.</p></div></li>
+        <li><span>3</span><div><h3>Load</h3><p>The agent loads the instruction body and exact approved resource paths when relevant.</p></div></li>
+        <li><span>4</span><div><h3>Inspect</h3><p>The chat shows the skill load event, so a person can see which guidance entered the run.</p></div></li>
+      </ol>
+    </section>
+
+    <section class="section section--dark">
+      <div class="wrap split-copy">
+        <div><p class="kicker kicker--light">Marketplace skills</p><h2>Install a capability without replacing the agent.</h2></div>
+        <div><p>A standalone skill listing can be published, reviewed, versioned, installed, updated, and attached to an existing agent.</p><p>The complete skill text is visible before install. Supporting files are inert context, not executable code.</p><a class="text-link text-link--light" href="/marketplace/">See the marketplace flow <span aria-hidden="true">→</span></a></div>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="wrap final-cta__inner">
+        <p class="kicker">Hosted beta access by request</p>
+        <h2>Bring the workflow your best operator already knows.</h2>
+        <p>Start with one repeatable process and make the instructions reviewable.</p>
+        <a class="button button--light" href="mailto:taylor@apmhelp.com?subject=PM%20in%20a%20Box%20skills">Request hosted beta</a>
+      </div>
+    </section>
   </main>
-  <footer class="footer"><div class="wrap footer__inner"><div class="footer__links"><a href="../">Marketplace</a><a href="../agents/">Agents</a><a href="../tools/">Tools</a><a href="../connectors/">Connectors</a><a href="../../eula/">EULA</a><a href="../../privacy/">Privacy</a></div><p class="footer__meta">AGPL-3.0 licensed. &copy; <span id="year">2026</span> PM in a Box contributors.</p></div></footer>
-  <script src="../../script.js?v=20260526-ux" defer></script>
+
+  <footer class="site-footer">
+    <div class="wrap site-footer__grid">
+      <div class="site-footer__brand"><a href="/" class="brand brand--footer"><img src="/logo.svg" alt="" width="28" height="34" /><span>PM in a Box</span></a><p>Property management work, in one place.</p></div>
+      <nav aria-label="Product"><strong>Product</strong><a href="/features/">Features</a><a href="/marketplace/">Marketplace</a><a href="/marketplace/connectors/">Connectors</a></nav>
+      <nav aria-label="Marketplace"><strong>Marketplace</strong><a href="/marketplace/agents/">Agents</a><a href="/marketplace/skills/">Skills</a><a href="/marketplace/tools/">Agent capabilities</a></nav>
+      <nav aria-label="Legal"><strong>Legal</strong><a href="/privacy/">Privacy</a><a href="/eula/">Terms</a><a href="mailto:taylor@apmhelp.com">Contact</a></nav>
+    </div>
+    <div class="wrap site-footer__bottom"><span>Built by <a href="https://apmhelp.com" target="_blank" rel="noopener">APM Help</a>.</span><span>&copy; <span id="year">2026</span> PM in a Box.</span></div>
+  </footer>
+  <script src="/script.js?v=20260811" defer></script>
 </body>
 </html>

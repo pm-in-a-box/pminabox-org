@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">PM in a Box</title>
+  <desc id="desc">The AI operations workspace for property managers</desc>
+  <rect width="1200" height="630" fill="#17251f"/>
+  <circle cx="1160" cy="-20" r="260" fill="#20362c"/>
+  <circle cx="1040" cy="650" r="280" fill="#a74631" opacity=".18"/>
+
+  <g transform="translate(72 64)">
+    <rect x="0" y="0" width="48" height="58" rx="8" fill="#f4f0e7"/>
+    <path d="M10 16 24 8l14 8v18l-14 8-14-8Z" fill="#17251f"/>
+    <path d="m15 32 9 5 9-5" fill="none" stroke="#d6b86e" stroke-width="3"/>
+    <text x="64" y="38" fill="#f4f0e7" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="27" font-weight="700">PM in a Box</text>
+  </g>
+
+  <text x="72" y="190" fill="#d6b86e" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="16" font-weight="700" letter-spacing="3">PROPERTY MANAGEMENT OPERATIONS</text>
+  <text x="72" y="275" fill="#ffffff" font-family="Georgia, Times New Roman, serif" font-size="68">Your team, your work,</text>
+  <text x="72" y="353" fill="#ffffff" font-family="Georgia, Times New Roman, serif" font-size="68">and your AI.</text>
+  <text x="72" y="431" fill="#e5b2a6" font-family="Georgia, Times New Roman, serif" font-size="68" font-style="italic">All in one box.</text>
+  <text x="72" y="530" fill="#b9c3bd" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="22">Chat · Tasks · Email · Automations · Apps · Connected data</text>
+
+  <g transform="translate(795 145)">
+    <rect width="330" height="345" rx="18" fill="#fbfaf6" stroke="#d6b86e" stroke-width="2"/>
+    <rect width="330" height="40" rx="18" fill="#20362c"/>
+    <rect y="28" width="330" height="20" fill="#20362c"/>
+    <circle cx="22" cy="20" r="4" fill="#a74631"/>
+    <circle cx="36" cy="20" r="4" fill="#d6b86e"/>
+    <circle cx="50" cy="20" r="4" fill="#cbd7c4"/>
+    <rect x="0" y="40" width="92" height="305" fill="#2d4a3b"/>
+    <text x="14" y="72" fill="#aebbb4" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="9" font-weight="700">DEPARTMENTS</text>
+    <rect x="8" y="84" width="76" height="27" rx="5" fill="#ffffff" opacity=".12"/>
+    <text x="15" y="102" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="10"># accounting</text>
+    <text x="15" y="132" fill="#c7d0cb" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="10"># leasing</text>
+    <text x="15" y="159" fill="#c7d0cb" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="10"># maintenance</text>
+    <text x="15" y="186" fill="#c7d0cb" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="10"># operations</text>
+    <text x="15" y="233" fill="#aebbb4" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="9" font-weight="700">MY WORKSPACE</text>
+    <text x="15" y="260" fill="#c7d0cb" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="10">Personal AI</text>
+    <text x="15" y="287" fill="#c7d0cb" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="10">My tasks</text>
+
+    <text x="112" y="74" fill="#17251f" font-family="Georgia, Times New Roman, serif" font-size="16"># accounting</text>
+    <line x1="107" y1="89" x2="312" y2="89" stroke="#dedbd2"/>
+    <circle cx="127" cy="125" r="14" fill="#a74631"/>
+    <text x="119" y="129" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="8" font-weight="700">MW</text>
+    <rect x="150" y="109" width="144" height="43" rx="7" fill="#f1ede4"/>
+    <line x1="161" y1="122" x2="274" y2="122" stroke="#858d88" stroke-width="4"/>
+    <line x1="161" y1="136" x2="246" y2="136" stroke="#b8bcb9" stroke-width="4"/>
+    <circle cx="127" cy="190" r="14" fill="#d6b86e"/>
+    <text x="120" y="194" fill="#17251f" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="8" font-weight="700">AI</text>
+    <rect x="150" y="168" width="156" height="72" rx="7" fill="#e4ebe0"/>
+    <line x1="161" y1="184" x2="286" y2="184" stroke="#66736c" stroke-width="4"/>
+    <line x1="161" y1="199" x2="278" y2="199" stroke="#9aa49e" stroke-width="4"/>
+    <line x1="161" y1="214" x2="252" y2="214" stroke="#9aa49e" stroke-width="4"/>
+    <line x1="107" y1="276" x2="312" y2="276" stroke="#dedbd2"/>
+    <text x="115" y="305" fill="#66736c" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="9">Chat</text>
+    <text x="161" y="305" fill="#66736c" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="9">Tasks</text>
+    <text x="210" y="305" fill="#66736c" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="9">Email</text>
+    <text x="258" y="305" fill="#66736c" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="9">Calendar</text>
+  </g>
+</svg>
