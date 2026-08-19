@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>PM in a Box | AI Operations Workspace for Property Managers</title>
-  <meta name="description" content="Run property management work from one shared space with team chat, AI agents, task boards, email, calendars, automations, apps, and PMS connectors." />
+  <title>PM in a Box | AI Agents for Property Management Teams</title>
+  <meta name="description" content="Build a team of AI agents that remember, delegate, and run on a schedule, or run the whole company in one box with departments, boards, email, and automations." />
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
   <meta name="theme-color" content="#17251f" />
   <link rel="canonical" href="https://pm-in-a-box.org/" />
@@ -13,22 +13,22 @@
   <meta property="og:locale" content="en_US" />
   <meta property="og:site_name" content="PM in a Box" />
   <meta property="og:url" content="https://pm-in-a-box.org/" />
-  <meta property="og:title" content="PM in a Box | Property Management Operations Workspace" />
-  <meta property="og:description" content="Give your team one place for property management work, communication, AI agents, automations, and connected business data." />
+  <meta property="og:title" content="PM in a Box | AI Agents for Property Management Teams" />
+  <meta property="og:description" content="Build your own team of AI agents for property management work, or bring the whole company into one box of departments, boards, email, and automations." />
   <meta property="og:image" content="https://pm-in-a-box.org/og-image.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:image:alt" content="PM in a Box, the AI operations workspace for property managers" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="PM in a Box | Property Management Operations Workspace" />
-  <meta name="twitter:description" content="One shared place for your property management team, work, AI agents, automations, and connected data." />
+  <meta name="twitter:title" content="PM in a Box | AI Agents for Property Management Teams" />
+  <meta name="twitter:description" content="A team of AI agents for property management work, and one box for the whole company." />
   <meta name="twitter:image" content="https://pm-in-a-box.org/og-image.png" />
   <meta name="twitter:image:alt" content="PM in a Box, the AI operations workspace for property managers" />
 
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="apple-touch-icon" href="/logo.png" />
-  <link rel="stylesheet" href="/styles.css?v=20260811" />
+  <link rel="stylesheet" href="/styles.css?v=20260819" />
 
   <script type="application/ld+json">
   {
@@ -61,7 +61,7 @@
         "@id": "https://pm-in-a-box.org/#software",
         "name": "PM in a Box",
         "url": "https://pm-in-a-box.org/",
-        "description": "An AI operations workspace for property management teams with department chat, agents, tasks, email, calendars, automations, apps, and connected business data.",
+        "description": "An AI workspace for property management teams. Build a private team of agents that remember, delegate to each other, and run on a schedule, or run the whole company in departments with boards, email, calendars, automations, apps, and connected business data.",
         "applicationCategory": "BusinessApplication",
         "applicationSubCategory": "Property management operations software",
         "operatingSystem": "Any",
@@ -71,8 +71,12 @@
           "audienceType": "Property managers and property management companies"
         },
         "featureList": [
+          "Single Player agent teams",
+          "Agent to agent delegation",
+          "Scheduled agent routines",
+          "Agent memory",
+          "Agent web search",
           "Department chat with AI agents",
-          "Private Personal AI",
           "Task boards and reusable task templates",
           "Shared email and calendars",
           "Visual automations",
@@ -85,7 +89,7 @@
         "offers": {
           "@type": "Offer",
           "availability": "https://schema.org/LimitedAvailability",
-          "description": "Hosted beta access is available by request for noncommercial use"
+          "description": "Hosted beta access is available by request"
         },
         "provider": {
           "@id": "https://pm-in-a-box.org/#organization"
@@ -110,7 +114,7 @@
         <span aria-hidden="true"></span>
       </button>
       <nav class="site-nav" id="primary-nav" aria-label="Primary">
-        <a href="/#inside">Inside the box</a>
+        <a href="/#agents">Agents</a>
         <a href="/features/">Features</a>
         <a href="/marketplace/">Marketplace</a>
         <a href="/#connectors">Connectors</a>
@@ -121,251 +125,132 @@
 
   <main id="main">
     <section class="hero wrap">
-      <div class="hero__copy">
-        <p class="kicker">Property management operations, in one place</p>
-        <h1>Your team, your work, and your AI. <em>All in one box.</em></h1>
+      <div>
+        <p class="kicker">AI operations for property management</p>
+        <h1>Build the agents. <em>Hand off the work.</em></h1>
+      </div>
+      <div class="hero__aside">
         <p class="hero__lead">
-          PM in a Box gives property management teams one shared place to talk,
-          assign work, connect business systems, and put AI to work on the
-          details. Your people stay in control.
+          PM in a Box gives you a private team of AI agents that remember how
+          your portfolio works, pass work to each other, and run on a schedule.
+          When the whole company needs one place, the same box holds
+          departments, boards, email, and automations.
         </p>
         <div class="button-row">
           <a class="button" href="mailto:taylor@apmhelp.com?subject=PM%20in%20a%20Box%20hosted%20beta%20access">Request hosted beta</a>
-          <a class="button button--quiet" href="#inside">See what is inside</a>
+          <a class="button button--quiet" href="#agents">See what agents do</a>
         </div>
         <ul class="hero__facts" aria-label="Product facts">
           <li>Hosted beta by request</li>
           <li>Desktop app coming soon</li>
-          <li><a href="/eula/">Noncommercial use only</a></li>
         </ul>
       </div>
-
-      <figure class="workspace-preview" aria-label="Illustration of a PM in a Box accounting department">
-        <div class="workspace-preview__bar">
-          <span class="window-dot"></span>
-          <span class="window-dot"></span>
-          <span class="window-dot"></span>
-          <span class="workspace-preview__title">Leeland Property Management</span>
-        </div>
-        <div class="workspace-preview__body">
-          <aside class="workspace-preview__sidebar">
-            <p>Departments</p>
-            <span># accounting</span>
-            <span class="is-active"># leasing</span>
-            <span># maintenance</span>
-            <span># operations</span>
-            <p>My workspace</p>
-            <span>Personal AI</span>
-            <span>My tasks <b>7</b></span>
-          </aside>
-          <div class="workspace-preview__main">
-            <div class="workspace-preview__head">
-              <div>
-                <strong># leasing</strong>
-                <small>6 people · 2 agents</small>
-              </div>
-              <span class="preview-status">Connected</span>
-            </div>
-            <div class="preview-thread">
-              <div class="preview-message">
-                <span class="preview-avatar">MW</span>
-                <p><strong>Maya</strong><small>9:14 AM</small> @leasing Which renewals need a decision this week?</p>
-              </div>
-              <div class="preview-message preview-message--agent">
-                <span class="preview-avatar">AI</span>
-                <p><strong>Leasing agent</strong><small>9:14 AM</small> Four renewals are due. Two are ready to send, one needs a rent review, and Pine Street is waiting on an owner decision.</p>
-              </div>
-            </div>
-            <div class="preview-workbar">
-              <span>Chat</span>
-              <span>Tasks</span>
-              <span>Email</span>
-              <span>Calendar</span>
-              <span>Automations</span>
-            </div>
-          </div>
-        </div>
-        <figcaption>Each department has its own people, agents, work, and connected data.</figcaption>
-      </figure>
     </section>
 
-    <section class="statement">
-      <div class="wrap statement__inner">
-        <p class="kicker kicker--light">The idea is simple</p>
-        <h2>Your software should follow the way the company already works.</h2>
-        <p>
-          Accounting should have accounting work. Leasing should have leasing
-          work. Private work should stay private. PM in a Box starts there, then
-          adds the agents and automation each team actually needs.
-        </p>
+    <section class="section section--tint" id="modes">
+      <div class="wrap">
+        <div class="section-heading">
+          <p class="kicker">Two ways in</p>
+          <h2>Work with your own agents, or with the whole company.</h2>
+          <p>One tab at the top of the app switches between them. They keep separate casts, and only your connectors are shared.</p>
+        </div>
+        <div class="two-up">
+          <article class="editorial-panel">
+            <p class="kicker">Single Player</p>
+            <h3>Your own team of agents.</h3>
+            <p>
+              A rail of agents on the left, one conversation on the right. Each
+              agent keeps its own thread, its own memory, and its own face. Ask
+              a manager agent to brief the team and it hands every teammate a
+              request of their own, then picks the answers up as they land.
+            </p>
+            <ul class="tag-list" aria-label="Single Player features">
+              <li>Private to you</li>
+              <li>Memory per agent</li>
+              <li>Agent to agent</li>
+            </ul>
+          </article>
+          <article class="editorial-panel editorial-panel--lined">
+            <p class="kicker">Multiplayer</p>
+            <h3>The company workspace.</h3>
+            <p>
+              Accounting, Leasing, Maintenance, Operations, Marketing, and
+              Engineering each get a room with its own people, agents, task
+              board, inbox, calendar, automations, and connectors. Private work
+              stays with the person who owns it.
+            </p>
+            <ul class="tag-list" aria-label="Multiplayer features">
+              <li>Departments</li>
+              <li>Boards</li>
+              <li>Shared inbox</li>
+            </ul>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section class="section wrap" id="inside">
+    <section class="section wrap" id="agents">
       <div class="section-heading section-heading--split">
         <div>
-          <p class="kicker">Inside the box</p>
-          <h2>Built around the work, not the AI.</h2>
+          <p class="kicker">What the agents do</p>
+          <h2>Agents that finish the job.</h2>
         </div>
         <p>
-          Every feature belongs to a real place in the operation. The result
-          feels less like a chatbot and more like the company workspace.
+          Not a chat window with a property management theme. These are the
+          behaviors that make an agent worth keeping around for a month.
         </p>
       </div>
 
       <div class="feature-ledger">
         <article class="feature-ledger__item">
           <span class="feature-ledger__number">01</span>
-          <div>
-            <h3>Departments that work like rooms</h3>
-            <p>Give Accounting, Leasing, Maintenance, Operations, Marketing, and Engineering their own chat, members, agents, model, connectors, and work surfaces.</p>
-          </div>
-          <ul class="tag-list" aria-label="Department features">
-            <li>Shared chat</li>
-            <li>Threads</li>
-            <li>Files</li>
-            <li>Voice calls</li>
-          </ul>
+          <h3>They remember what matters</h3>
+          <p>Tell an agent your preferences, your style, or how your portfolio works and it keeps that instead of asking again next week. Stale notes get pruned, and a standing instruction becomes a routine that actually runs.</p>
         </article>
 
         <article class="feature-ledger__item">
           <span class="feature-ledger__number">02</span>
-          <div>
-            <h3>AI agents with a clear job</h3>
-            <p>Add agents to the department where they work. Attach focused skills, choose a model, and @mention an agent when you need it. Agents use only the context and connectors available in that room.</p>
-          </div>
-          <ul class="tag-list" aria-label="Agent features">
-            <li>Agent skills</li>
-            <li>Multiple models</li>
-            <li>Visible tool use</li>
-          </ul>
+          <h3>They run on a schedule</h3>
+          <p>Ask for a Monday morning summary or a weekday debrief and the agent sets up the routine itself. Open its details to see what is scheduled, run it now, pause it, or delete it.</p>
         </article>
 
         <article class="feature-ledger__item">
           <span class="feature-ledger__number">03</span>
-          <div>
-            <h3>Boards for work that has to get done</h3>
-            <p>Track tasks by stage, owner, assignee, due date, and department. Add subtasks, comments, attachments, property links, and reusable templates. My Tasks brings each person's work into one list.</p>
-          </div>
-          <ul class="tag-list" aria-label="Task features">
-            <li>Task boards</li>
-            <li>Templates</li>
-            <li>My Tasks</li>
-          </ul>
+          <h3>They hand work to each other</h3>
+          <p>A manager agent can brief the whole team at once without sitting and waiting. Every hand-off appears as a card in the chat you can open to read exactly what was asked and what came back.</p>
         </article>
 
         <article class="feature-ledger__item">
           <span class="feature-ledger__number">04</span>
-          <div>
-            <h3>Email and calendars beside the conversation</h3>
-            <p>Read and reply to shared mail, create events, check availability, and keep the surrounding team context nearby. Google Workspace and Microsoft 365 stay scoped to the right department or person.</p>
-          </div>
-          <ul class="tag-list" aria-label="Communication features">
-            <li>Shared inbox</li>
-            <li>Calendar</li>
-            <li>Direct messages</li>
-          </ul>
+          <h3>They read your connected systems</h3>
+          <p>Agents try the live system first and fall back to your stored copy when a provider is unavailable. The reply says which one it used, and how fresh and complete that data was.</p>
         </article>
 
         <article class="feature-ledger__item">
           <span class="feature-ledger__number">05</span>
-          <div>
-            <h3>Automations your team can see</h3>
-            <p>Build flows from email and task events. Add conditions, AI steps, web research, messages, drafts, and task actions. Test a flow before turning it on, then inspect each run when something needs attention.</p>
-          </div>
-          <ul class="tag-list" aria-label="Automation features">
-            <li>Visual builder</li>
-            <li>Dry runs</li>
-            <li>Run history</li>
-          </ul>
+          <h3>They search and read the web</h3>
+          <p>No setup and no extra connector. An agent looks something up, tells you which pages it used, reads a bounded number of them, and treats what it finds as information rather than instructions.</p>
         </article>
 
         <article class="feature-ledger__item">
           <span class="feature-ledger__number">06</span>
-          <div>
-            <h3>Private tools built for your company</h3>
-            <p>Ask Engineering to build a Box App against approved department data. Review a draft, set who can view or operate it, and publish the exact version your team should use.</p>
-          </div>
-          <ul class="tag-list" aria-label="Box App features">
-            <li>Scoped data</li>
-            <li>Permissions</li>
-            <li>Audited actions</li>
-          </ul>
+          <h3>They hand back the file</h3>
+          <p>Calculations run over real data and come back as a spreadsheet, a PDF, or a document in the conversation that asked for it, with the source data attached.</p>
         </article>
-
-        <article class="feature-ledger__item">
-          <span class="feature-ledger__number">07</span>
-          <div>
-            <h3>A website studio inside Marketing</h3>
-            <p>Start from the company website, ask for changes in plain English, compare versions, preview the result, and publish when it is ready. Custom-domain controls stay with owners and admins.</p>
-          </div>
-          <ul class="tag-list" aria-label="Website studio features">
-            <li>Site import</li>
-            <li>Version history</li>
-            <li>Publishing</li>
-          </ul>
-        </article>
-
-        <article class="feature-ledger__item">
-          <span class="feature-ledger__number">08</span>
-          <div>
-            <h3>A private workspace for each person</h3>
-            <p>Personal AI, private connectors, notification controls, drafts, and direct messages stay separate from shared department work. Owners can see adoption and the work inbox without opening private conversations.</p>
-          </div>
-          <ul class="tag-list" aria-label="Personal workspace features">
-            <li>Personal AI</li>
-            <li>Private connectors</li>
-            <li>Notifications</li>
-          </ul>
-        </article>
-      </div>
-
-      <p class="section-link"><a href="/features/">See the complete feature tour <span aria-hidden="true">→</span></a></p>
-    </section>
-
-    <section class="section section--tint">
-      <div class="wrap">
-        <div class="section-heading">
-          <p class="kicker">Made for the actual portfolio</p>
-          <h2>Useful on Monday morning.</h2>
-          <p>No generic AI promises. These are the jobs the box is designed to help with.</p>
-        </div>
-        <div class="workflow-grid">
-          <article>
-            <p class="workflow-grid__label">Accounting</p>
-            <h3>Find the exception before month-end.</h3>
-            <p>Reconcile bank activity, check trust balances, draft owner statements, and build portfolio reports with the source data attached.</p>
-          </article>
-          <article>
-            <p class="workflow-grid__label">Leasing</p>
-            <h3>Move the next decision forward.</h3>
-            <p>Summarize leases, draft notices and renewals, review the inbox, find calendar time, and keep follow-up work on the board.</p>
-          </article>
-          <article>
-            <p class="workflow-grid__label">Maintenance</p>
-            <h3>Keep the request and the work together.</h3>
-            <p>Triage incoming issues, connect work orders to properties, dispatch vendors, collect attachments, and track completion.</p>
-          </article>
-          <article>
-            <p class="workflow-grid__label">Leadership</p>
-            <h3>See the work without reading every chat.</h3>
-            <p>Review My Tasks, department activity, employee adoption, app permissions, connector audiences, and portable data exports.</p>
-          </article>
-        </div>
       </div>
     </section>
 
     <section class="section connector-section" id="connectors">
       <div class="wrap connector-section__layout">
         <div>
-          <p class="kicker kicker--light">Connect the systems you already use</p>
-          <h2>Your data becomes useful where the work happens.</h2>
+          <p class="kicker kicker--light">Connect what you already run</p>
+          <h2>Your data, where the work happens.</h2>
           <p>
-            Connectors belong to one department or one person's Personal AI.
-            Credentials stay server-side. Agents see the available capability,
-            not the secret behind it.
+            A connector belongs to one department or one person, never to the
+            whole company by default. Credentials stay server-side, so an agent
+            sees the capability and never the secret behind it.
           </p>
-          <a class="text-link text-link--light" href="/marketplace/connectors/">See connector details <span aria-hidden="true">→</span></a>
+          <a class="text-link text-link--light" href="/marketplace/connectors/">See connector details <span aria-hidden="true">&rarr;</span></a>
         </div>
         <div class="connector-list" aria-label="Supported connectors">
           <span>AppFolio</span>
@@ -380,50 +265,52 @@
       </div>
     </section>
 
-    <section class="section wrap">
-      <div class="two-up">
-        <article class="editorial-panel">
-          <p class="kicker">Use the tools you prefer</p>
-          <h2>Bring the box to the tools you prefer.</h2>
-          <p>
-            Create a personal MCP token and use approved Box data from Codex,
-            Claude Code, Cursor, Claude Desktop, or another MCP client. Access
-            follows the member who created the token.
-          </p>
-          <a class="text-link" href="/features/#access">Read about access and computer use <span aria-hidden="true">→</span></a>
-        </article>
-        <article class="editorial-panel editorial-panel--lined">
-          <p class="kicker">Your records are portable</p>
-          <h2>Export the box without opening a support ticket.</h2>
-          <p>
-            Owners can create a machine-readable archive of shared Box data.
-            Connector secrets, Personal AI, direct messages, and private group
-            chats stay out of the owner-wide export.
-          </p>
-          <a class="text-link" href="/features/#data">Read about data controls <span aria-hidden="true">→</span></a>
-        </article>
-      </div>
-    </section>
-
-    <section class="section marketplace-callout">
-      <div class="wrap marketplace-callout__inner">
-        <div>
-          <p class="kicker">Marketplace</p>
-          <h2>Install an agent. Read the instructions first.</h2>
-          <p>
-            The in-app marketplace is for agents and skills shared by other
-            property managers. Every install arrives as a draft, with its
-            instructions and required connectors visible before anyone turns
-            it on. PM in a Box does not attest to marketplace listings.
-          </p>
+    <section class="section section--tint">
+      <div class="wrap">
+        <div class="section-heading">
+          <p class="kicker">The rest of the box</p>
+          <h2>The tools the company runs on.</h2>
+          <p>Everything below belongs to a department or a person, with an owner and a scope.</p>
         </div>
-        <div class="marketplace-callout__steps" aria-label="Marketplace workflow">
-          <span><b>1</b> Browse</span>
-          <span><b>2</b> Review</span>
-          <span><b>3</b> Install as draft</span>
-          <span><b>4</b> Activate</span>
+        <div class="capability-list">
+          <div>
+            <strong>Task boards</strong>
+            <span>Lanes that match the real workflow, with owners, dates, subtasks, comments, attachments, property links, and reusable templates. My Tasks collects one person's work into a single list.</span>
+          </div>
+          <div>
+            <strong>Email and calendar</strong>
+            <span>Read, reply, send, create events, and check availability from Google Workspace or Microsoft 365, scoped to the right department or person.</span>
+          </div>
+          <div>
+            <strong>Automations</strong>
+            <span>Flows built from email and task events, with conditions, AI steps, web research, drafts, messages, and task actions. Test one before turning it on, then inspect every run.</span>
+          </div>
+          <div>
+            <strong>Box Apps</strong>
+            <span>Ask Engineering for an internal tool built on approved department data. Apps can save work now: task stages, notes, checklists, and governed connector writes, under per-app permissions.</span>
+          </div>
+          <div>
+            <strong>Website studio</strong>
+            <span>Marketing can import the company site, ask for changes in plain English, compare versions, preview each one, publish, and attach a custom domain.</span>
+          </div>
+          <div>
+            <strong>Marketplace</strong>
+            <span>Agents and skills shared by other property managers. Every install arrives as a draft with its full instructions and required connectors visible first.</span>
+          </div>
+          <div>
+            <strong>MCP access</strong>
+            <span>Create a revocable personal token and use approved Box data from Claude Code, Codex, Cursor, Claude Desktop, or another MCP client. Access follows the member who created it.</span>
+          </div>
+          <div>
+            <strong>Portable export</strong>
+            <span>Owners can build a machine-readable archive of shared Box data. Connector secrets, Personal AI, direct messages, and private group chats stay out of it.</span>
+          </div>
+          <div>
+            <strong>Oversight</strong>
+            <span>Adoption receipts, app permissions, connector audiences, model choice per department, and support debug IDs, without opening anyone's private conversations.</span>
+          </div>
         </div>
-        <a class="button button--quiet" href="/marketplace/">How the marketplace works</a>
+        <p class="section-link"><a href="/features/">See the complete feature tour <span aria-hidden="true">&rarr;</span></a></p>
       </div>
     </section>
 
@@ -432,9 +319,9 @@
         <p class="kicker">Hosted beta access by request</p>
         <h2>Try it with the people who do the work.</h2>
         <p>
-          The public website is an overview, not the application. Hosted beta
-          access is separate, and the desktop app is not yet publicly released.
-          Product access is for noncommercial use under our <a href="/eula/">Terms</a>.
+          This site is an overview, not the application. Hosted beta access is
+          separate, and the desktop app is not yet publicly released. Use of the
+          product is governed by our <a href="/eula/">Terms</a>.
         </p>
         <a class="button button--light" href="mailto:taylor@apmhelp.com?subject=PM%20in%20a%20Box%20hosted%20beta%20access">Email Taylor about hosted beta access</a>
       </div>
@@ -474,6 +361,6 @@
     </div>
   </footer>
 
-  <script src="/script.js?v=20260811" defer></script>
+  <script src="/script.js?v=20260819" defer></script>
 </body>
 </html>
