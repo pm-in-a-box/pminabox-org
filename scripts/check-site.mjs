@@ -181,8 +181,13 @@ const homeHtml = htmlByFile.get(homeFile) ?? "";
 for (const retiredClaim of ["Desktop and mobile", "Free during beta", "free during beta"]) {
   if (homeHtml.includes(retiredClaim)) fail(homeFile, "contains retired availability claim: " + retiredClaim);
 }
-for (const requiredClaim of ["Hosted beta by request", "Desktop app coming soon", "Noncommercial use only"]) {
+for (const requiredClaim of ["Hosted beta by request", "Desktop app coming soon"]) {
   if (!homeHtml.includes(requiredClaim)) fail(homeFile, "missing availability disclosure: " + requiredClaim);
+}
+// License scope belongs in the agreement, not in marketing copy. Assert the
+// home page does not restate it, so the two cannot drift apart again.
+if (/noncommercial|non-commercial/i.test(homeHtml)) {
+  fail(homeFile, "restates license scope; leave licensing to /eula/");
 }
 
 const termsFile = path.join(root, "eula", "index.html");
