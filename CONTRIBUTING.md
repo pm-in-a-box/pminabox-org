@@ -12,7 +12,7 @@ If you're not a developer: open an issue using the **Copy fix** template and des
 
 ### Suggest a product feature or marketplace addition
 
-The product's agents and skills are managed inside PM in a Box, not in this website repository. Send product and marketplace suggestions to [Taylor](mailto:taylor@apmhelp.com) so they reach the product team.
+The product's agents and skills are managed inside PM in a Box, not in this website repository. Send product and marketplace suggestions to [Robert](mailto:robert@apmhelp.com) so they reach the product team.
 
 ### Report a bug
 
